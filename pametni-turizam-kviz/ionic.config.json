@@ -1,0 +1,7 @@
+{
+  "name": "pametni-turizam-kviz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
