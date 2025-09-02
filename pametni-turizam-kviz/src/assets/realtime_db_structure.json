@@ -1,0 +1,46 @@
+{
+  "users": {
+    "userId": {
+      "username": "string",
+      "email": "string",
+      "avatarUrl": "string (optional)"
+    }
+  },
+  "quizzes": {
+    "quizId": {
+      "title": "string (naziv kviza)",
+      "category": "string (npr. Istorija, Geografija, destinacija)",
+      "description": "string (kratak opis kviza)",
+      "questions": ["questionId1", "questionId2", "questionId3"] 
+    }
+  },
+  "questions": {
+    "questionId": {
+      "text": "string (tekst pitanja)",
+      "options": [
+        "string (odgovor 1)",
+        "string (odgovor 2)",
+        "string (odgovor 3)",
+        "string (odgovor 4)"
+      ],
+      "correctIndex": "number (0–3)",
+      "imageUrl": "string (opciono, putanja do slike u Storage)"
+    }
+  },
+  "results": {
+    "userId": {
+      "quizId": {
+        "score": "number",
+        "date": "timestamp/string"
+      }
+    }
+  },
+  "leaderboard": {
+    "quizId": {
+      "userId": {
+        "username": "string",
+        "score": "number"
+      }
+    }
+  }
+}
